@@ -1,4 +1,16 @@
 import { Injectable } from '@nestjs/common';
 
 @Injectable()
-export class CatService {}
+export class CatService {
+  public getHello(): string {
+    return 'MYEOW';
+  }
+
+  public introduce(): string {
+    return 'My name is Tom!';
+  }
+
+  public modifyDetail(): string {
+    return 'Successfully modified';
+  }
+}
